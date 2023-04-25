@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style1.css">
+    <link rel="shortcut icon" href="./img/logo.webp" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="https://www.linkedin.com/in/manoj-b-390821218">About Me</a></li>
+          <li><a href="https://www.instagram.com/manoj_gigs/">Insta</a></li>
+        </ul>
+      </nav>
+    <div class="m1">
+    <div class="gallery">
+        <div class="gallery-item">
+          <img src="./img/a2dd96e6-c02f-45b7-bca1-632c42aece46.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+          <img src="./img/download.png" alt="Image 2">
+        </div>
+        <div class="gallery-item">
+          <img src="./img/fotor-ai-2023042602759.jpg" alt="Image 3">
+        </div>
+      </div>
+      
+      <div id="image-modal" class="modal">
+        <img class="modal-content">
+        <a href="#" class="download-btn">Download</a>
+      </div>
+    </div>
+      <script>
+        // Select all gallery items
+const galleryItems = document.querySelectorAll('.gallery-item');
+
+// Select the modal and modal content
+const modal = document.getElementById('image-modal');
+const modalImg = document.querySelector('.modal-content');
+
+// Select the download button
+const downloadBtn = document.querySelector('.download-btn');
+
+// Loop through each gallery item and add a click event listener
+galleryItems.forEach(item => {
+  item.addEventListener('click', () => {
+    // Set the modal image source to the clicked image
+    modalImg.src = item.firstElementChild.src;
+
+    // Show the modal
+    modal.style.display = 'block';
+  });
+});
+
+// When the user clicks anywhere outside of the modal, close it
+modal.addEventListener('click', (event) => {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+
+// When the user clicks the download button, download the image
+downloadBtn.addEventListener('click', () => {
+  const downloadLink = document.createElement('a');
+  downloadLink.href = modalImg.src;
+  downloadLink.download = modalImg.alt;
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
+  document.body.removeChild(downloadLink);
+});
+
+      </script>
+</body>
+</html>

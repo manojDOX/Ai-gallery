@@ -1,0 +1,124 @@
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    margin-right: 14%;
+    margin-left: 14%;
+  }
+  
+  /* Navigation Styles */
+  nav {
+    background-color: #212A3E;
+    color: #9BA4B5;
+    height: 50%;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 2%;
+  }
+  
+  nav li {
+    margin-right: 1%;
+  }
+  
+  nav a {
+    color: #9BA4B5;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    font-size: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #14405e;
+    color: #f2f2f2;
+  }
+  
+  /* Header Styles */
+  header {
+    background: #F1F6F9;
+    color: #005b96;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  header h1 {
+    color:#212A3E ;
+    margin: 0;
+    font-size: 270%;
+    font-weight: bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  
+  /* Section Styles */
+  main {
+    background: #F1F6F9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  section {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 300px;
+  }
+  
+  h2 {
+    background-color: #333;
+    color: white;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    transition: 1s;
+  }
+  
+  p {
+    padding: 10px;
+  }
+
+  img:hover {
+    transition: 1s;
+    transform: scale(1.1);
+  }
+  section p{
+    font-size: 90%;
+  }
+  section p span{
+    font-size: 100%;
+    font-weight: bold;
+  }
+  /* Footer Styles */
+  footer {
+    background-color: #005b96;
+    color: white;
+    padding: 1%;
+    text-align: center;
+  }
+  footer p{
+    font-size: 110%;
+  }
+  

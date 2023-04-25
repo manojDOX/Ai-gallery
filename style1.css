@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+nav {
+    background-color: #212A3E;
+    color: #9BA4B5;
+    height: 50%;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 2%;
+  }
+  
+  nav li {
+    margin-right: 1%;
+  }
+  
+  nav a {
+    color: #9BA4B5;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    font-size: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #14405e;
+    color: #f2f2f2;
+  }
+.gallery {
+    background: #F1F6F9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gallery-item {
+    margin: 5px;
+  }
+  
+  .gallery-item img {
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .modal {
+    align-items: center;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 20%;
+    top: 0;
+    width: 61%;
+    height: auto;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1000px;
+    height: auto;
+    object-fit: contain;
+    padding: 20px;
+  }
+  
+  .download-btn {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90px;
+    border: solid;
+    border-radius: 100px;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #1b1919;
+    color: #b7b7b7;
+    text-decoration: none;
+  }
+  .tools_sec{
+    display: flex;
+  }
